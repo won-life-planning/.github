@@ -2,7 +2,7 @@ name: 리팩터링
 description: 동작은 그대로 두고 코드 구조를 개선할 때 사용합니다.
 title: "[리팩터링] "
 labels: ["refactor"]
-projects: ["won-life-planning/1"]
+projects: ["won-life-planning/3"]
 body:
   - type: markdown
     attributes:

@@ -2,13 +2,13 @@ name: 버그
 description: 동작이 예상과 다를 때 사용합니다.
 title: "[버그] "
 labels: ["bug"]
-projects: ["won-life-planning/1"]
+projects: ["won-life-planning/3"]
 body:
   - type: markdown
     attributes:
       value: |
         테스트 케이스(TC)에서 발견한 버그라면 제목에 TC 번호를 넣어 주세요. 단위 테스트는 UT-번호, 종합 테스트는 IT-번호입니다. 예: `[버그] UT-12 0원 입력`
-        테스트 탭에서 Fail 행을 선택하고 시트 메뉴 GitHub → 선택한 TC로 버그 이슈 만들기를 쓰면 내용이 자동으로 채워진 이슈가 만들어집니다.
+        테스트 탭에서 Fail 행을 선택하고 시트 메뉴 GitHub → 선택한 TC로 버그 이슈 작성을 쓰면 내용이 채워진 이슈 작성 화면이 열립니다.
   - type: dropdown
     id: wbs
     attributes:
