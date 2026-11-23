@@ -1,0 +1,56 @@
+name: 버그
+description: 동작이 예상과 다를 때 사용합니다.
+title: "[버그] "
+labels: ["bug"]
+projects: ["won-life-planning/1"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 심각도
+      description: 단위·종합 테스트 탭의 이슈중요도와 같은 기준입니다.
+      options:
+        - "A: 서비스 불가, 즉시 수정"
+        - "B: 일부 기능 오류"
+        - "C: 사소한 문구·화면 오류"
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 증상
+      placeholder: "예: 배포 서버에서만 분석 API가 500 에러"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 결과 / 실제 결과
+      value: |
+        - 기대: 
+        - 실제: 
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: 환경과 스크린샷
+      description: 로컬/배포 서버, 브라우저, 에러 로그 등. 로그의 키·비밀번호는 가리고 붙여 주세요.
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **해결한 뒤에는 이 이슈에 댓글로 아래 세 가지를 남기고, 노션 '문제 해결 리포트'에도 한 줄 적어 주세요.** (발표 자료에 들어갑니다)
+        - 원인
+        - 해결 방법
+        - 다시 안 겪으려면

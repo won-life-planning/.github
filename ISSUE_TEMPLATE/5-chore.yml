@@ -1,0 +1,27 @@
+name: 설정·의존성
+description: 프로젝트 설정, 라이브러리 추가·버전 변경, 린터·포매터 설정에 사용합니다.
+title: "[설정] "
+labels: ["chore"]
+projects: ["won-life-planning/1"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 무엇을, 왜 하나요?
+      placeholder: "예: springdoc-openapi 추가 (Swagger로 API 명세 자동 생성)"
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: 할 일
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: checkboxes
+    id: dependency
+    attributes:
+      label: 의존성 변경
+      options:
+        - label: 라이브러리를 추가하거나 버전을 바꾸는 경우, Slack에 공유하고 파트 담당자 동의를 받았습니다.

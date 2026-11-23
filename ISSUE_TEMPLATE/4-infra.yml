@@ -1,0 +1,35 @@
+name: 인프라
+description: 서버, 배포, CI/CD, 모니터링, 네트워크 작업에 사용합니다.
+title: "[인프라] "
+labels: ["chore", "Infra"]
+projects: ["won-life-planning/1"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 무엇을, 왜 하나요?
+      placeholder: "예: PR마다 빌드·테스트를 돌리는 GitHub Actions 워크플로 추가"
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: 할 일
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 영향 범위와 되돌리는 방법
+      description: 배포 중단 여부, 팀원 로컬 환경 영향, 비용 변화, 문제 시 되돌리는 방법
+      placeholder: "예: 배포 중 1~2분 접속 불가. 문제 시 이전 Docker 이미지 태그로 재배포"
+    validations:
+      required: true
+  - type: checkboxes
+    id: secret
+    attributes:
+      label: 확인
+      options:
+        - label: 키·비밀번호는 레포가 아니라 Jenkins Credentials나 SSM Parameter Store에 넣습니다.

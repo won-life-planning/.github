@@ -1,0 +1,34 @@
+name: 리팩터링
+description: 동작은 그대로 두고 코드 구조를 개선할 때 사용합니다.
+title: "[리팩터링] "
+labels: ["refactor"]
+projects: ["won-life-planning/1"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 무엇을, 왜 바꾸나요?
+      placeholder: "예: 분석 서비스에 섞여 있는 현금화 일정 계산을 별도 클래스로 분리 (테스트 작성이 어려움)"
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: 할 일
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 영향 범위
+      description: 바뀌는 파일·API와 다른 팀원 작업에 영향이 있는지 적어 주세요.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 확인
+      options:
+        - label: 기존 테스트가 리팩터링 후에도 그대로 통과하는지 확인합니다.

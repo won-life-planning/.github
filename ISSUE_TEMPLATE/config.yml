@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 팀 컨벤션 (노션)
+    url: https://app.notion.com/p/4213c9cbb5a480ecaf7df88391ea5bf6
+    about: 이슈를 만들기 전에 브랜치·커밋·라벨 규칙을 확인하세요.
