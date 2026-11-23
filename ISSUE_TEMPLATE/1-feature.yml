@@ -10,6 +10,23 @@ body:
         제목에 서비스 흐름 번호를 넣어 주세요. 예: `[기능] P06-2 긴급 지출 등록 API`
         로그인, 공통 응답 형식처럼 특정 흐름에 속하지 않으면 `공통`이라고 적어요. 예: `[기능] 공통 JWT 로그인`
         만든 뒤 파트 라벨(FE/BE/AI/DB), 담당자, 마일스톤을 지정해 주세요.
+  - type: dropdown
+    id: wbs
+    attributes:
+      label: WBS 작업
+      description: WBS 진척률 자동 계산에 쓰입니다.
+      options:
+        - 4.1 개발·배포 환경 세팅
+        - 4.2 핵심 기능 개발 (백엔드)
+        - 4.3 핵심 기능 개발 (프론트엔드)
+        - 4.4 프론트·백엔드 연동
+        - 4.5 부가 기능 개발
+        - 4.6 CI/CD 및 인프라 구성, 모니터링
+        - 5.1 단위 테스트
+        - 5.2 종합 테스트 및 수정
+        - 해당 없음
+    validations:
+      required: true
   - type: textarea
     id: summary
     attributes:

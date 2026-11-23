@@ -4,6 +4,28 @@ title: "[버그] "
 labels: ["bug"]
 projects: ["won-life-planning/1"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        테스트 케이스(TC)에서 발견한 버그라면 제목에 TC 번호를 넣어 주세요. 예: `[버그] TC-12 0원 입력 시 200 응답`
+        테스트 탭의 "버그 등록" 링크로 열면 내용이 미리 채워집니다.
+  - type: dropdown
+    id: wbs
+    attributes:
+      label: WBS 작업
+      description: WBS 진척률 자동 계산에 쓰입니다.
+      options:
+        - 4.1 개발·배포 환경 세팅
+        - 4.2 핵심 기능 개발 (백엔드)
+        - 4.3 핵심 기능 개발 (프론트엔드)
+        - 4.4 프론트·백엔드 연동
+        - 4.5 부가 기능 개발
+        - 4.6 CI/CD 및 인프라 구성, 모니터링
+        - 5.1 단위 테스트
+        - 5.2 종합 테스트 및 수정
+        - 해당 없음
+    validations:
+      required: true
   - type: dropdown
     id: severity
     attributes:
