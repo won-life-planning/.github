@@ -1,6 +1,6 @@
-name: 문서
+name: 문서 작업
 description: 레포 안의 문서(README, API 문서, AGENTS.md, 주석) 작업에 사용합니다. 산출물 시트 작업은 WBS에서 관리합니다.
-title: "[문서 작업] "
+title: "[문서] "
 labels: ["docs"]
 projects: ["won-life-planning/3"]
 body:
