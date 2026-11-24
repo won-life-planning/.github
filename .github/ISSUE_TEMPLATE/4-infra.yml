@@ -1,4 +1,4 @@
-name: 인프라
+name: 🏗️ 인프라
 description: 서버, 배포, CI/CD, 모니터링, 네트워크 작업에 사용합니다.
 title: "[인프라] "
 labels: ["chore", "Infra"]
