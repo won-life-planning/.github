@@ -1,6 +1,6 @@
 name: 버그
 description: 동작이 예상과 다를 때 사용합니다.
-title: "[버그] "
+title: "[버그 제보] "
 labels: ["bug"]
 projects: ["won-life-planning/3"]
 body:
